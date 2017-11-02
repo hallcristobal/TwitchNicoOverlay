@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Nico",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [
+                "index.js"
+            ],
+            "matches": [
+                "*://*.twitch.tv/*"
+            ],
+            "exclude_globs": [
+                "*://api.twitch.tv/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "*://*.twitch.tv/*"
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
